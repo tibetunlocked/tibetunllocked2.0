@@ -1,0 +1,24 @@
+{
+  "copyright": "jhakhang 2024",
+  "theme": "light",
+  "fundingText": "",
+  "author": "By Tibet Action Institute",
+  "name": "Tibet Unlocked",
+  "banner": "/banner.png",
+  "pageSize": 6,
+  "fundingUrl": "",
+  "owner": "",
+  "favicon": "/favicon.svg",
+  "explicit": false,
+  "cover": "/android-chrome-192x192.png",
+  "language": "en",
+  "link": "https://your-website-url.netlify.app",
+  "email": "dawapaljor@tibetaction.net",
+  "description": "Tibet Unlocked breaks through China’s information blackout on Tibet by shining a spotlight on critical issues facing Tibetans in Tibet and telling stories of their brave resistance to Chinese rule. Hosted by two Tibetan activist leaders in exile, this podcast brings a Tibetan-focused activist perspective into the heart of the discussion of the Sino-Tibetan conflict.",
+  "category": [
+    "Tibetan",
+    "Society",
+    "Freedom"
+  ],
+  "feedSize": ""
+}
