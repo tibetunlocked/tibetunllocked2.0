@@ -3,9 +3,8 @@ import EpisodeLayout from "../layouts/EpisodeLayout.astro";
 import astropodConfig from "../../.astropod/astropod.config.json";
 ---
 
-<EpisodeLayout title="About" description={astropodConfig.description} description_bo={astropodConfig.description_bo}  cover={astropodConfig.cover}>
-  {astropodConfig.description_bo}
-  <br>
+<EpisodeLayout title="About" description={astropodConfig.description}   cover={astropodConfig.cover}>
   {astropodConfig.description}
+
  
 </EpisodeLayout>
