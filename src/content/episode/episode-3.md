@@ -2,7 +2,7 @@
 title: "What does the invasion of Ukraine and the global response mean for China and the Tibetan people’s ongoing struggle for freedom?"
 audioUrl: https://tibet-unlocked.s3.amazonaws.com/Episode-3.mp3
 pubDate: March 15 2022
-duration: 1:09
+duration: 01:09
 size: 0.7
 cover: "/images/thumbnail/banner.png"
 explicit: false

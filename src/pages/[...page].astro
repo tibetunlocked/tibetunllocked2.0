@@ -5,11 +5,11 @@ import { getCollection } from "astro:content";
 import astropodConfig from "../../.astropod/astropod.config.json";
 import HeaderCard from "../components/headerCard/HeaderCard.astro";
 import AudioPlayer from "../components/audioPlayer.astro";
-import PlainTextRenderer from "marked-plaintext";
+
 import { marked } from "marked";
 import Pagination from "../components/pagination.astro";
 
-const renderer = new PlainTextRenderer();
+
 
 export async function getStaticPaths({ paginate }) {
   const episodes = await getCollection("episode");
@@ -33,7 +33,7 @@ const { page } = Astro.props;
           title={episode.data.title}
           episode={episode.data.episode}
           cover={episode.data.cover}
-          desc={marked.parse(episode.body.slice(0, 500), { renderer: renderer })}
+          desc={episode.data.intro}
           url={"/episode/" + episode.slug}
           audioUrl={episode.data.audioUrl}
           pubDate={episode.data.pubDate}

@@ -3,7 +3,7 @@ import { CollectionEntry, getCollection } from "astro:content";
 import { episodeSchema } from "../../content/config";
 import EpisodeLayout from "../../layouts/EpisodeLayout.astro";
 import AudioPlayer from "../../components/audioPlayer.astro";
-import PlainTextRenderer from "marked-plaintext";
+//import PlainTextRenderer from "marked-plaintext";
 import { marked } from "marked";
 import astropodConfig from "../../../.astropod/astropod.config.json";
 
@@ -22,8 +22,7 @@ const { entry } = Astro.props;
 const episode: episodeSchema = entry.data;
 const { Content } = await entry.render();
 
-const renderer = new PlainTextRenderer();
-const description = marked.parse(entry.body.slice(0, 500), { renderer: renderer }).slice(0, 200);
+
 ---
 
 <EpisodeLayout

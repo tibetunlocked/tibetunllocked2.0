@@ -19,10 +19,12 @@
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "astro": "^4.15.0",
+    "astro-robots-txt": "^1.0.0",
     "daisyui": "^4.12.10",
     "dayjs": "^1.11.13",
     "marked": "^7.0.2",
     "marked-plaintext": "^0.0.2",
+    "sharp": "^0.33.5",
     "typescript": "^5.6.2",
     "xml2js": "^0.6.2"
   },
