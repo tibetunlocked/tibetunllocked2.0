@@ -12,8 +12,8 @@ const episodeSchema = z.object({
     episodeType: z.string().optional(),
     duration: z.coerce.string(), //duration in format hh:mm:ss
     size: z.number(), // size in megabytes
-    keywords: z.string(),
-    voices: z.string(),
+    keywords: z.string().optional(),
+    voices: z.string().optional(),
 });
 
 export type episodeSchema = z.infer<typeof episodeSchema>;

@@ -2,12 +2,7 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {
-			fontFamily: {
-				monlam2: ["monlam2"],
-			  }, 
-		},
-		
+		extend: {},
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {

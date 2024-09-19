@@ -1,11 +1,17 @@
 ---
+const { title, cover, url, audioUrl, id, pubDate, duration, intro, voices,  keywords } = Astro.props;
+
 import { CollectionEntry, getCollection } from "astro:content";
 import { episodeSchema } from "../../content/config";
 import EpisodeLayout from "../../layouts/EpisodeLayout.astro";
 import AudioPlayer from "../../components/audioPlayer.astro";
-//import PlainTextRenderer from "marked-plaintext";
+import PlainTextRenderer from "marked-plaintext";
 import { marked } from "marked";
 import astropodConfig from "../../../.astropod/astropod.config.json";
+import UserIcon from "../../components/icons/user.astro";
+import TagIcon from "../../components/icons/tagIcon.astro";
+import ClockIcon from "../../components/icons/clockIcon.astro"
+import CalanderIcon from "../../components/icons/calanderIcon.astro"
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("episode");
@@ -14,6 +20,7 @@ export async function getStaticPaths() {
     props: { entry },
   }));
 }
+
 interface Props {
   entry: CollectionEntry<"episode">;
 }
@@ -22,19 +29,26 @@ const { entry } = Astro.props;
 const episode: episodeSchema = entry.data;
 const { Content } = await entry.render();
 
+const renderer = new PlainTextRenderer();
+const description = marked.parse(entry.body.slice(0, 500), { renderer: renderer }).slice(0, 200);
+
 
 ---
 
 <EpisodeLayout
-  title={episode.title}
-  pubDate={episode.pubDate}
-  cover={episode.cover}
-  explicit={episode.explicit}
-  intro={episode.intro},
-  cover={episode.cover}
-  cover={episode.cover}
+title={episode.title}
+pubDate={episode.pubDate}
+cover={episode.cover}
+explicit={episode.explicit}
+intro={episode.intro},
+cover={episode.cover}
 >
   <Content />
+  <p class="text-xs opacity-60 flex items-center ">
+    
+    <span class="bg-slate-500 p-1 text-xs rounded-md text-white">E:{episode.episode} </span>  | {episode.pubDate} |
+    <UserIcon/> {episode.voices} | <TagIcon/>{episode.keywords}
+  </p>
 </EpisodeLayout>
 
 <AudioPlayer />

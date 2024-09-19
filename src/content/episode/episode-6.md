@@ -1,5 +1,5 @@
 ---
-title: "Nyima Lhamo's Journey for Justice"
+title: Nyima Lhamo's Journey for Justice
 audioUrl: https://tibet-unlocked.s3.amazonaws.com/Episode-6.mp3
 pubDate: April 17 2024
 duration: 01:09

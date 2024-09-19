@@ -8,23 +8,23 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
 
 <div
   id="audio-player-container"
-  class="w-full z-20 bottom-0 fixed  px-5 h-16 items-center transition-opacity hidden opacity-0 duration-500 backdrop-blur-sm bg-black/80 " 
+  class="w-full z-20 bottom-0 fixed bg-base-100 px-5 h-16 items-center transition-opacity hidden opacity-0 duration-500"
 >
   <audio src="" preload="metadata"></audio>
-  <span id="audio-loading" class=" text-white bg-slate-100"></span>
-  <label id="audio-control" class="swap hidden text-white">
+  <span id="audio-loading" class="loading loading-spinner loading-md min-w-[1.5rem] hidden"></span>
+  <label id="audio-control" class="swap hidden">
     <input type="checkbox" id="play-icon" />
-    <div id="play-icon-svg" class="swap-off text-white ">
+    <div id="play-icon-svg" class="swap-off">
       <PlayIcon />
     </div>
-    <div id="pause-icon-svg" class="swap-on text-white">
+    <div id="pause-icon-svg" class="swap-on">
       <PauseIcon />
     </div>
   </label>
-  <span id="current-time" class="ml-5 mr-2 text-white">0:00</span> <span class="text-white">/</span>
-  <span id="duration" class="ml-2 text-white">0:00</span>
-  <input id="seek-slider" type="range" min="0" max="0" value="0" class="range range-xs mx-5 "/>
-  <label class="ml-5 swap text-white ">
+  <span id="current-time" class="ml-5 mr-2">0:00</span>/
+  <span id="duration" class="ml-2">0:00</span>
+  <input id="seek-slider" type="range" min="0" max="0" value="0" class="range range-xs mx-5" />
+  <label class="ml-5 swap">
     <input id="mute-icon" type="checkbox" />
     <div class="swap-off">
       <AudioIcon />
@@ -33,11 +33,11 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
       <AudioMutedIcon />
     </div>
   </label>
-  <div class="dropdown dropdown-top dropdown-end ml-5 h-6 ">
+  <div class="dropdown dropdown-top dropdown-end ml-5 h-6">
     <button tabindex="0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-dots-vertical text-white"
+        class="icon icon-tabler icon-tabler-dots-vertical"
         width="24"
         height="24"
         viewBox="0 0 24 24"

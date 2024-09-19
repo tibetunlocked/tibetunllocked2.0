@@ -1,5 +1,5 @@
 ---
-title: "Exposing China's Colonial Boarding Schools in Tibet"
+title: Exposing China's Colonial Boarding Schools in Tibet
 audioUrl: https://tibet-unlocked.s3.amazonaws.com/Episode-4.mp3
 pubDate: April 12 2022
 duration: 01:09

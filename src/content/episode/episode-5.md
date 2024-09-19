@@ -1,5 +1,5 @@
 ---
-title: "Eyewitness to colonial boarding preschools in Tibet"
+title: Eyewitness to colonial boarding preschools in Tibet
 audioUrl: https://tibet-unlocked.s3.amazonaws.com/Episode-5.mp3
 pubDate: Dec 14 2022
 duration: 01:09
