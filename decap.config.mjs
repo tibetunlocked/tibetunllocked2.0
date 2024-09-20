@@ -31,13 +31,12 @@ export default function dcapconfig() {
           {
             name: "duration",
             widget: "string",
-            label: "Episode Duration",
+            label: "Episode Durations",
             pattern: [
               "^(?:[01]?[0-9]|2[0-3]):[0-5]?[0-9]:[0-5]?[0-9]$|^[0-5]?[0-9]:[0-5]?[0-9]$",
               "Must have format hh:mm:ss or mm:ss",
             ],
           },
-          { name: "size", widget: "number", label: "Episode Size (MB)", value_type: "float" },
           { name: "cover", widget: "image", label: "Custom Cover URL", required: false },
           { name: "explicit", widget: "boolean", label: "Explicit", required: false, default: astropodConfig.explicit },
           { name: "episode", widget: "number", label: "Episode", required: false },
