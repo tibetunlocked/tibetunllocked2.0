@@ -5,7 +5,7 @@ pubDate: May 31 2024
 duration: 01:09
 size: 0.7
 cover: "/images/thumbnail/1-6-24-dr-gyallo.jpeg"
-explicit: false
+explicit: true
 episode: 7
 season: 1
 episodeType: full

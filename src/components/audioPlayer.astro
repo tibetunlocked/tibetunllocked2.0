@@ -8,7 +8,7 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
 
 <div
   id="audio-player-container"
-  class="w-full z-20 bottom-0 fixed bg-base-100 px-5 h-16 items-center transition-opacity hidden opacity-0 duration-500"
+  class="w-full z-20 bottom-0 fixed  px-5 h-16 items-center transition-opacity hidden opacity-0 duration-500 bg-slate-950/80 backdrop-blur-md "
 >
   <audio src="" preload="metadata"></audio>
   <span id="audio-loading" class="loading loading-spinner loading-md min-w-[1.5rem] hidden"></span>
@@ -21,8 +21,8 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
       <PauseIcon />
     </div>
   </label>
-  <span id="current-time" class="ml-5 mr-2">0:00</span>/
-  <span id="duration" class="ml-2">0:00</span>
+  <span id="current-time" class="ml-5 mr-2 text-orioles">0:00</span><span class="text-orioles">/</span>
+  <span id="duration" class="ml-2 text-orioles">0:00</span>
   <input id="seek-slider" type="range" min="0" max="0" value="0" class="range range-xs mx-5" />
   <label class="ml-5 swap">
     <input id="mute-icon" type="checkbox" />
@@ -42,7 +42,7 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
         height="24"
         viewBox="0 0 24 24"
         stroke-width="2"
-        stroke="currentColor"
+        stroke="#ea580c"
         fill="none"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -55,7 +55,7 @@ import AudioMutedIcon from "./icons/audioMutedIcon.astro";
     </button>
     <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
       <li>
-        <a href="#" download id="audio-download-link">
+        <a href="#" download id="audio-download-link" class="text-orioles" download>
           <DownloadIcon />
           Download</a
         >

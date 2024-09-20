@@ -5,10 +5,11 @@ export interface Props {
   title: string;
   description: string;
   image?: string;
+  intro: string;
 }
 
 import astropodConfig from "../../.astropod/astropod.config.json";
-const { title, description, image } = Astro.props;
+const { title, description, image, intro } = Astro.props;
 
 const display_image = image ? image : astropodConfig.cover;
 ---

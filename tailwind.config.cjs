@@ -2,7 +2,13 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				policeblue: '#3f5765',
+				orioles : '#FF530D',
+			}
+		},
+	
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
