@@ -1,7 +1,7 @@
-import astropodConfig from "../../.astropod/astropod.config.json";
-import languageList from "../helpers/languagesList.json";
-import podcastMainCategories from "../helpers/podcastMainCategories.json";
-import themes from "../helpers/themes.json";
+import astropodConfig from "../.astropod/astropod.config.json";
+import languageList from "./helpers/languagesList.json";
+import podcastMainCategories from "./helpers/podcastMainCategories.json";
+import themes from "./helpers/themes.json";
 
 export default function dcapconfig() {
   const config = {
@@ -24,6 +24,10 @@ export default function dcapconfig() {
           { name: "audioUrl", widget: "string", label: "Audio URL" },
           { name: "pubDate", widget: "date", label: "Publish Date", format: "DD MMM YYYY" },
           { name: "body", widget: "markdown", label: "Episode Body", required: false },
+          { name: "voices", widget: "string", label: "Contributor" },
+          { name: "keywords", widget: "string", label: "keywords" },
+          { name: "intro", widget: "string", label: "Introduction" },
+
           {
             name: "duration",
             widget: "string",
