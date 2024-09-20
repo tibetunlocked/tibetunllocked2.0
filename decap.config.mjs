@@ -1,7 +1,7 @@
-import astropodConfig from "../.astropod/astropod.config.json";
-import languageList from "./helpers/languagesList.json";
-import podcastMainCategories from "./helpers/podcastMainCategories.json";
-import themes from "./helpers/themes.json";
+import astropodConfig from "./.astropod/astropod.config.json";
+import languageList from "./src/helpers/languagesList.json";
+import podcastMainCategories from "./src/helpers/podcastMainCategories.json";
+import themes from "./src/helpers/themes.json";
 
 export default function dcapconfig() {
   const config = {

@@ -1,5 +1,5 @@
 {
-  "copyright": "jhakhang 2024",
+  "copyright": "Tibet Unlocked 2024",
   "theme": "light",
   "fundingText": "",
   "author": "By Tibet Action Institute",
@@ -9,7 +9,7 @@
   "fundingUrl": "",
   "owner": "",
   "favicon": "/favicon.svg",
-  "explicit": false,
+  "explicit": true,
   "cover": "/android-chrome-192x192.png",
   "language": "en",
   "link": "https://tibetunlocked.netlify.app",
