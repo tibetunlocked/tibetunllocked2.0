@@ -6,10 +6,13 @@ export interface Props {
   description: string;
   image?: string;
   intro: string;
+
 }
 
+
+
 import astropodConfig from "../../.astropod/astropod.config.json";
-const { title, description, image, intro } = Astro.props;
+const { title, description, image, intro, episode } = Astro.props;
 
 const display_image = image ? image : astropodConfig.cover;
 ---
@@ -27,14 +30,14 @@ const display_image = image ? image : astropodConfig.cover;
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content={astropodConfig.link} />
+<meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(display_image, astropodConfig.link)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={astropodConfig.link} />
+<meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(display_image, astropodConfig.link)} />
