@@ -11,6 +11,7 @@ export default function dcapconfig() {
       branch: "main",
     },
     collections: [
+     
       {
         name: "episodes",
         label: "Episodes",
