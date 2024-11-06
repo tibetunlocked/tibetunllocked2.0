@@ -29,11 +29,19 @@ export default function dcapconfig() {
           { name: "keywords", widget: "string", label: "keywords" },
           { name: "intro", widget: "string", label: "Introduction" },
 
-          
+          // {
+          //   name: "duration",
+          //   widget: "string",
+          //   label: "Episode Durations",
+          //   pattern: [
+          //     "^(?:[01]?[0-9]|2[0-3]):[0-5]?[0-9]:[0-5]?[0-9]$|^[0-5]?[0-9]:[0-5]?[0-9]$",
+          //     "Must have format hh:mm:ss or mm:ss",
+          //   ],
+          // },
           { name: "cover", widget: "image", label: "Custom Cover URL", required: false },
           { name: "explicit", widget: "boolean", label: "Explicit", required: false, default: astropodConfig.explicit },
           { name: "episode", widget: "number", label: "Episode", required: false },
-          { name: "season", widget: "number", label: "Season", required: false },
+          // { name: "season", widget: "number", label: "Season", required: false },
           {
             name: "episodeType",
             widget: "select",
