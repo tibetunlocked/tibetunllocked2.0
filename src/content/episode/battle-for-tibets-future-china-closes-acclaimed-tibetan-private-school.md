@@ -7,7 +7,7 @@ keywords: Ganjong Sherab Norbu Lobling school, Tibetan School
 intro: In Episode 8 of Tibet Unlocked, Pema Yoko and Tibetan education expert
   Dr. Gyal Lo discuss the forced closure of one of the most influential
   Tibetan-run private schools in Tibet by Chinese authorities in July 2024.
-duration: 30:07
+duration: 01:09
 cover: /episode-8.png
 explicit: true
 episode: 8
