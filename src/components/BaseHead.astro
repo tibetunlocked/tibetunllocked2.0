@@ -12,6 +12,7 @@ export interface Props {
 
 
 import astropodConfig from "../../.astropod/astropod.config.json";
+import GoogleAnalytics from "./googleAnalytics.astro";
 const { title, description, image, intro, episode } = Astro.props;
 
 const display_image = image ? image : astropodConfig.cover;
@@ -42,3 +43,4 @@ const display_image = image ? image : astropodConfig.cover;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(display_image, astropodConfig.link)} />
 
+<GoogleAnalytics/>

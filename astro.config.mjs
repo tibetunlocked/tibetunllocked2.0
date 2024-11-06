@@ -7,35 +7,25 @@ import dcapConfig from "./decap.config.mjs";
 import astropodConfig from "./.astropod/astropod.config.json";
 import robotsTxt from "astro-robots-txt";
 
+import image from "@astrojs/image";
 
 // https://astro.build/config
-import image from "@astrojs/image";
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
   site: astropodConfig.site,
-  integrations: [
-    robotsTxt({
-      policy: [
-        {
-          userAgent: "*",
-          allow: "/",
-          disallow: "/admin",
-        },
-      ],
-    }),
-    mdx(),
-    sitemap(),
-    tailwind(),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-      cacheDir: "./.cache/image",
-      logLevel: "debug",
-    }),
-
-    NetlifyCMS({
-      config: dcapConfig(),
-    }),
-    
-  ],
+  integrations: [robotsTxt({
+    policy: [{
+      userAgent: "*",
+      allow: "/",
+      disallow: "/admin"
+    }]
+  }), mdx(), sitemap(), tailwind(), image({
+    serviceEntryPoint: "@astrojs/image/sharp",
+    cacheDir: "./.cache/image",
+    logLevel: "debug"
+  }), NetlifyCMS({
+    config: dcapConfig()
+  }), partytown()]
 });
