@@ -2,7 +2,7 @@
 title: How China Uses the “Visa as Bait” Strategy to Silence Tibetans
 audioUrl: https://tibet-unlocked.s3.us-east-1.amazonaws.com/Episode-9.mp3
 pubDate: 10 Sep 2025
-voices: Tenzin Dorjee
+voices: Pema Yoko
 keywords: Visa as Bait
 intro: China’s “visa as bait” strategy is an insidious tool of transnational
   repression, silencing Tibetans by weaponizing family reunions. Through
