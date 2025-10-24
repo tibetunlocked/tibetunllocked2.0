@@ -28,6 +28,7 @@ for (const key in social) {
     <span class="hidden md:inline-block">Follow us</span>
   </label>
   <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow rounded-box w-52 bg-orioles">
+  
     {social.instagram && (<li><a href={social.instagram} target="_blank" class=" hover:text-white"><InstagramIcon />Instagram</a></li>)}
     {social.facebook && (<li><a href={social.facebook} target="_blank" class=" hover:text-white"><FacebookIcon />Facebook</a></li>)}
     {social.twitter && (<li><a href={social.twitter} target="_blank" class=" hover:text-white"><TwitterIcon />Twitter</a></li>)}
