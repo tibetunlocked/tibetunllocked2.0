@@ -6,7 +6,7 @@ voices: Pema Yoko
 keywords: Zhang Yadi
 intro: In this episode, we tell the story of Tara (Zhang Yadi), a brave Chinese activist for Tibet facing severe political charges that could see her imprisoned for many years, in  a rare case that has drawn international attention. Through a conversation with her friend and fellow activist Ginger, we explore Tara’s passion and advocacy for Tibet, the risks she faces, and how she is inspiring a new generation through their platform Chinese Youth Stand for Tibet.
 cover: /images/thumbnail/Episode-10.jpeg
-explicit: true
+explicit: false
 episode: 10
 episodeType: full
 ---

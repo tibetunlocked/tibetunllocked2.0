@@ -11,7 +11,7 @@ intro: China’s “visa as bait” strategy is an insidious tool of transnation
   an heartbreaking choice between speaking out for freedom or preserving the
   chance to see loved ones again.
 cover: /episode-9.jpg
-explicit: true
+explicit: false
 episode: 9
 episodeType: full
 ---
